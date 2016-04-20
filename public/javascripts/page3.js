@@ -21,6 +21,7 @@ $(document).ready(function () {
 
         $("#loading").show();
         $("#take-picture").hide();
+        $("#webcam-video").removeClass('blur');
 
         countdown(3);
 
@@ -37,6 +38,7 @@ $(document).ready(function () {
     });
 
     function takepicture(pictureNumber) {
+
         var canvas = $('canvas')[0];
         canvas.width = 1920;
         canvas.height = 1441;

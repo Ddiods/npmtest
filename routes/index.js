@@ -63,6 +63,11 @@ router.post('/save_page3', function (req, res) {
 });
 
 /* GET page5 page. */
+router.get('/page4/', function (req, res) {
+    res.render('page4', {id: req.query.user_id});
+});
+
+/* GET page5 page. */
 router.get('/page5/', function (req, res) {
     res.render('page5', {id: req.query.user_id, photo_id: req.query.photo_id});
 });
@@ -94,7 +99,7 @@ router.post('/sendemail/:id?', function (req, res) {
             stream.on('end', function () {
                 var transporter = nodemailer.createTransport('smtps://cosasartlima@gmail.com:Peru/2016@smtp.gmail.com');
                 var mailOptions = {
-                    from: '"Cosas" <osasartlima@gmail.com>', // sender address
+                    from: '"Cosas" <cosasartlima@gmail.com>', // sender address
                     to: buffer.email, // list of receivers
                     subject: 'Foto', // Subject line
                     text: 'Foto', // plaintext body
