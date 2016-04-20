@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    div#logo
+        img(src='images/logo.png')
+
+    div#login-form
+        div.big-input
+            input.nombre(type='text',name='nombre',value='',placeholder='nombre')
+        div.big-input
+            input.email(type='email',name='email',value='',placeholder='email')
+        div.terminos-y-condiciones
+            input(type='checkbox',name='acepto',value='si')
+            ACEPTO LOS TERMINOS Y CONDICIONES
+        div
+            input.submit(type='submit',value='LISTO? SONRIE')
+
+
+block scripts
+    script(src='javascripts/page2.js')

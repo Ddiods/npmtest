@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    div#logo
+        img(src='/images/logo.png')
+
+    video#webcam-video.blur(autoplay="autoplay")
+    canvas#photo
+    div#take-picture
+        img(src='/images/camara.png')
+    div#loading
+        div#counter
+        div.uil-ring-css(style='transform:scale(0.6)')
+            div
+    div#whitebox
+
+    audio#camera-click
+        source(src='/camera.mp3', type='audio/mpeg')
+
+block scripts
+    script(src='/javascripts/vendor/adapter.js')
+    script(src='/javascripts/page3.js')
