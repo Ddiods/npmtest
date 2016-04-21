@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    div#logo
+        img(src='/images/logo.png')
+
+    div#seleccione2 PERSONALIZA TU FOTO
+
+    div#full_image2(style={"background-image": 'url("/uploads/#{id}-#{photo_id}.jpg")'})
+
+    div#icons
+        - for(var x=1;x<=10;x++)
+            div.icon
+                img(src='/images/#{artista}/' + x + '.png')
+
+block scripts
+    script(src='/javascripts/vendor/jquery-ui.js')
+    script(src='/javascripts/page6.js')

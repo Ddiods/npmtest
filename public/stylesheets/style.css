@@ -176,15 +176,68 @@ div#icons {
     top: 1400px;
     font-size: 200px;
     width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
 }
 
-div#icons .icon{
+div#icons .icon {
     display: inline-block;
-    width: 30%;
+    width: 33%;
     text-align: center;
     cursor: pointer;
+}
+
+#seleccione2 {
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    margin-left: -263px;
+}
+
+#artistas {
+    position: absolute;
+    top: 510px;
+    width: 100%;
+}
+
+#artistas .artista-icono {
+    display: block;
+    text-align: center;
+    margin-bottom: 100px;
+    text-decoration: none;
+    color: #000;
+}
+
+#artistas .artista-icono span {
+    display: block;
+    width: 200px;
+    margin: auto;
+    font-size: 30px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+#icons .icon img {
+    width: 150px;
+}
+
+div#full_image2 {
+    position: absolute;
+    top: 530px;
+    width: 1080px;
+    height: 811px;
+    background-size: 1080px 811px;
+}
+
+.dragme {
+    width: 200px;
+}
+
+.ui-icon-gripsmall-diagonal-se {
+    background: url('../images/resize.png') 0 0;
+    width: 21px;
+    height: 21px;
 }
 
 ::-webkit-input-placeholder {

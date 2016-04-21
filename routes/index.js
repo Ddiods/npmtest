@@ -64,12 +64,17 @@ router.post('/save_page3', function (req, res) {
 
 /* GET page5 page. */
 router.get('/page4/', function (req, res) {
-    res.render('page4', {id: req.query.user_id});
+    res.render('page4', {id: req.query.user_id, photo_id: req.query.photo_id});
 });
 
 /* GET page5 page. */
 router.get('/page5/', function (req, res) {
     res.render('page5', {id: req.query.user_id, photo_id: req.query.photo_id});
+});
+
+/* GET page6 page. */
+router.get('/page6/', function (req, res) {
+    res.render('page6', {id: req.query.user_id, photo_id: req.query.photo_id, artista: req.query.artista});
 });
 
 /* GET sendemail page. */

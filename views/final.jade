@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    div#logo
+        img(src='/images/logo.png')
+
+    div#full_image
+        img(src='/uploads/#{id}-#{photo_id}.png')
+
+    div#icons
+        div#print.icon
+            i.fa.fa-print.fa-6
+        div#facebook.icon
+            i.fa.fa-facebook-official.fa-6
+        div#email.icon
+            i.fa.fa-envelope.fa-6
+
+block scripts
+    script(src='/javascripts/final.js')

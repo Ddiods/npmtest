@@ -45,7 +45,7 @@ $(document).ready(function () {
         canvas.getContext('2d').drawImage(video, 0, 0, 1920, 1441);
 
         var data = {
-            photoCode: canvas.toDataURL('image/png'),
+            photoCode: canvas.toDataURL('image/jpeg', 90),
             user_id: $_GET('user_id'),
             pictureNumber: pictureNumber
         };

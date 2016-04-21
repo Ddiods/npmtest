@@ -4,16 +4,20 @@ block content
     div#logo
         img(src='/images/logo.png')
 
-    div#full_image
-        img(src='/uploads/#{id}-#{photo_id}.png')
+    div#seleccione2 ESCOGE UN ARTISTA
 
-    div#icons
-        div#print.icon
-            i.fa.fa-print.fa-6
-        div#facebook.icon
-            i.fa.fa-facebook-official.fa-6
-        div#email.icon
-            i.fa.fa-envelope.fa-6
+    div#artistas
+        a.artista-icono(href='/page6?user_id=#{id}&photo_id=#{photo_id}&artista=amadeo-gonzales')
+            img(src='/images/amadeo-gonzales/010.png', height='275px')
+            span AMADEO GONZÁLES
+
+        a.artista-icono(href='/page6?user_id=#{id}&photo_id=#{photo_id}&artista=christian-bendayan')
+            img(src='/images/christian-bendayan/002.png', height='275px')
+            span CHRISTIAN BENDAYÁN
+
+        a.artista-icono(href='/page6?user_id=#{id}&photo_id=#{photo_id}&artista=jorge-cabieses')
+            img(src='/images/jorge-cabieses/010.png', height='275px')
+            span JORGE CABIESES
 
 block scripts
     script(src='/javascripts/page5.js')
